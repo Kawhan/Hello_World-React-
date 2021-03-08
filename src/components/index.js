@@ -1,6 +1,7 @@
 import React from 'react';
 import { Pie } from 'react-chartjs-2';
 import { Bar } from 'react-chartjs-2';
+import { Doughnut } from 'react-chartjs-2';
 
 const data = {
     labels: ['January', 'February', 'March'],
@@ -40,7 +41,42 @@ function Index() {
                 }}
             />
 
+            <Bar
+                data={data}
+                options={{
+                    title: {
+                            display: true, 
+                            text: 'Projeto Hello World - Primeiro Grafico de Baras',
+                            fontSize: 25    
+                        },
+                    legend: {
+                            display: true,
+                            position: 'top',
+                            labels: {fontColor: 'rbga(255,99,132,0.8)'}
+                        }
+                }}
+            />
+
+            <Doughnut
+                data={data}
+                options={{
+                    title: {
+                            display: true, 
+                            text: 'Projeto Hello World - Primeiro Grafico de Rosquinha',
+                            fontSize: 25    
+                        },
+                    legend: {
+                            display: true,
+                            position: 'top',
+                            labels: {fontColor: 'rbga(255,99,132,0.8)'}
+                        }
+                }}
             
+            
+            
+            
+            
+            />
             
         </div>
 
